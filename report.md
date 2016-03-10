@@ -35,6 +35,7 @@ Next we will compute the Q, K and c respectively and finally optained the recurs
 X = KX + c, iterate it within the iteratio limit we will get the result.
 
 Lastly, i have corrected all the solution we get into 4 decimal places.
+
 ---------------------------------------------------------
 
 ## Task 2 -- SVD method and image compression

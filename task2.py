@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
 import scipy as sp
-import copy as cp
 from PIL import Image
 
 #defining function for compressing and decomposing
 def compress(U,sigma,V,n):  #a function to compress the image into lower resolution
-    sigma_low=cp.copy(sigma)
+    sigma_low = np.zeros_like(sigma)
+    sigma_low = sigma_low + sigma
     for i in range(n,len(sigma)):   #To keep the first n nonzero element in the matrix sigma
         sigma_low[i][i] = 0 
     
